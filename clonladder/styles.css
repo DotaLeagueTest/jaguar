@@ -1,37 +1,322 @@
+@font-face {
+    font-family: VDS_Compensated_light;
+    src: url(fonts/VDS_Compensated_Light.ttf);
+}
+
 body{
+    background: url("images/bg.jpg")no-repeat;
     font-family: Arial;
     max-width: 3000px;
-    font-size:13px;
-    background-color: white;
-    margin: 0;
-    background-position: center;
-    background: url("images/bg.jpg")
+    min-width: 1000px;
+    font-size:30px;
+    margin:0;
 
 }
 header{
+    background: #A90000;
+    height: 89px;
+    margin-top:0;
+    font-family: VDS_Compensated_light;
+    color:white;
 
 }
-.hightlighter_top_bg{
-    height: 3px;
+h1{
+    padding-left: 40px;
+    font-family: VDS_Compensated_light;
+
+
+}
+.razdel{
+    border-bottom: 2px solid gray;
+    width: 410px;
+    padding-bottom: 10px;
+}
+
+
+p{
+    margin:0;
+    padding-left: 40px;
+    display: inline-block;
+    text-align: center;
+}
+p.tipologo{
+    font-size:40px;
+}
+p.choosen{
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:#A90000;
+    text-align: center;
+    margin:0;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    padding-right: 36px;
+
+}
+
+
+.search {
+    width: 374px; /* Ширина поля с кнопкой */
+
+    min-height: 20px; /* Минимальная высота */
+
+
+
+}
+form{
+    display: inline-block;
+    padding-left: 60px;
+}
+form.regform{
+    font-family: VDS_Compensated_light;
+}
+.pass_rec__body__text.warning {
+    color:#900;
+}
+input[type="submit"]{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+input[type="submit_c"]{
+    width: 40px;
+}
+.search_a{
+    width: 155px;
+    height: 30px;
+    cursor:pointer;
+    text-align: center;
+    font-family: VDS_Compensated_light;
+    background: #A90000;
+    color:white;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+
+.search_b{
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: VDS_Compensated_light;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+
+}
+.men{
+    font-size:16px;
+    display: inline-block;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+
+/* Стили для jQuery UI Datepicker */
+#datepicker_div, .datepicker_inline {
+    font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    background: #DDD;
+    width: 185px;
+}
+#datepicker_div {
+    display: none;
+    border: 1px solid #FF9900;
+    z-index: 10;
+}
+.datepicker_inline {
+    float: left;
+    display: block;
+    border: 0;
+}
+.datepicker_dialog {
+    padding: 5px !important;
+    border: 4px ridge #DDD !important;
+}
+button.datepicker_trigger {
+    width: 25px;
+}
+img.datepicker_trigger {
+    margin: 2px;
+    vertical-align: middle;
+}
+.datepicker_prompt {
+    float: left;
+    padding: 2px;
+    background: #DDD;
+    color: #000;
+}
+*html .datepicker_prompt {
+    width: 185px;
+}
+.datepicker_control, .datepicker_links, .datepicker_header, .datepicker {
+    clear: both;
+    float: left;
+    width: 100%;
+    color: #FFF;
+}
+.datepicker_control {
+    background: #FF9900;
+    padding: 2px 0px;
+}
+.datepicker_links {
+    background: #E0F4D7;
+    padding: 2px 0px;
+}
+.datepicker_control, .datepicker_links {
+    font-weight: bold;
+    font-size: 80%;
+    letter-spacing: 1px;
+}
+.datepicker_links label {
+    padding: 2px 5px;
+    color: #888;
+}
+.datepicker_clear, .datepicker_prev {
+    float: left;
+    width: 34%;
+}
+.datepicker_current {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.datepicker_close, .datepicker_next {
+    float: right;
+    width: 34%;
+    text-align: right;
+}
+.datepicker_header {
+    padding: 1px 0 3px;
+    background: #83C948;
+    text-align: center;
+    font-weight: bold;
+    height: 1.3em;
+}
+.datepicker_header select {
+    background: #83C948;
+    color: #000;
+    border: 0px;
+    font-weight: bold;
+}
+.datepicker {
+    background: #CCC;
+    text-align: center;
+    font-size: 100%;
+}
+.datepicker a {
+    display: block;
+    width: 100%;
+}
+.datepicker .datepicker_titleRow {
+    background: #B1DB87;
+    color: #000;
+}
+.datepicker .datepicker_daysRow {
+    background: #FFF;
+    color: #666;
+}
+.datepicker_weekCol {
+    background: #B1DB87;
+    color: #000;
+}
+.datepicker .datepicker_daysCell {
+    color: #000;
+    border: 1px solid #DDD;
+}
+#datepicker .datepicker_daysCell a {
+    display: block;
+}
+.datepicker .datepicker_weekEndCell {
+    background: #E0F4D7;
+}
+.datepicker .datepicker_daysCellOver {
+    background: #FFF;
+    border: 1px solid #777;
+}
+.datepicker .datepicker_unselectable {
+    color: #888;
+}
+.datepicker_today {
+    background: #B1DB87 !important;
+}
+.datepicker_currentDay {
+    background: #83C948 !important;
+}
+#datepicker_div a, .datepicker_inline a {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: #000;
+}
+.datepicker_inline .datepicker_links a {
+    padding: 0 5px !important;
+}
+.datepicker_control a, .datepicker_links a {
+    padding: 2px 5px !important;
+    color: #000 !important;
+}
+.datepicker_titleRow a {
+    color: #000 !important;
+}
+.datepicker_control a:hover {
+    background: #FDD !important;
+    color: #333 !important;
+}
+.datepicker_links a:hover, .datepicker_titleRow a:hover {
+    background: #FFF !important;
+    color: #333 !important;
+}
+.datepicker_multi .datepicker {
+    border: 1px solid #83C948;
+}
+.datepicker_oneMonth {
+    float: left;
+    width: 185px;
+}
+.datepicker_newRow {
+    clear: left;
+}
+.datepicker_cover {
+    display: none;
+    display/**/: block;
     position: absolute;
-    top: -3px;
-    left: 6px;
-    width: 503px;
+    z-index: -1;
+    filter: mask();
+    top: -4px;
+    left: -4px;
+    width: 193px;
+    height: 200px;
 }
-.hightlighter_top_bg_center{
-    height: 3px;
-    width: 432px;
-    background: #966;
+/* Стили для jQuery UI Datepicker */
+
+#example {
+    float:left;
+    position:relative;
+    width:100px;
 }
-.hightlighter_top_bg_left{
-    width: 457px;
-    background: url("images/hight_top_bg_l.png") left center no-repeat;
-    margin-left: 25px;
-    margin: 0 auto;
+#exampleRange {
+    float:left;
+    position:relative;
+    width:200px;
+    right:10px;
 }
-.hightlighter_top_bg_right{
-    height: 3px;
-    width: 432px;
-    background: url("images/hight_top_bg_r.png") right center no-repeat;
-    padding-right: 25px;
+input {
+    background-color:#ECF3F8;
+    font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-align:left;
+    border:1px solid #000;
 }
+
+

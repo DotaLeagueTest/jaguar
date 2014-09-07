@@ -35,7 +35,7 @@ img {
 
 }
 img:hover{
-    border:4px solid #001be2;
+    border:4px solid #E23E3E;
     border-radius: 40px;
 
 }
@@ -70,6 +70,8 @@ input[type="submit"]{
 }
 
 input[type="text"]{
+    background-color: #E23E3E;
+    color:white;
 
 }
 image{
