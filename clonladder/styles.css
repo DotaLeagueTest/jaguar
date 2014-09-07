@@ -60,10 +60,16 @@ p.choosen{
     width: 374px; /* Ширина поля с кнопкой */
 
     min-height: 20px; /* Минимальная высота */
-
-
-
 }
+
+form.sear{
+    position: absolute;
+    min-width: 2000px;
+}
+
+
+
+
 form{
     display: inline-block;
     padding-left: 60px;
