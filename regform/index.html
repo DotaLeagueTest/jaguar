@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Another regform</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Регистрация</h1>
+    </header>
+    <div class="wrapper"></div>
+    <form class="regform" action="/echo" method="post">
+        Ваш логин (email):<span class="pass_rec__body__text warning">*</span>
+        <br>
+        <input class="ego" type="text" name="login" id="login-field"><br>
+        Пароль:<span class="pass_rec__body__text warning">*</span> <br>
+        <input class="pass" type="password" name="password" id="password-field"><br>
+
+        Пароль еще раз:<span class="pass_rec__body__text warning">*</span>
+        <br>
+        <input class="pass" type="password" name="password" id="password-field"><br>
+        Nickname:<span class="pass_rec__body__text warning">*</span>
+        <br>
+        <input class="nick" type="text" name="nickname" id="nickname-field"><br>
+        Имя:<br>
+        <input class="imya" type="text" name="name" id="name-field"><br>
+        Фамилия:<br>
+        <input class="familia" type="text" name="surname" id="surname-field"><br>
+        Информация о себе:<br>
+        <textarea class="info" rows="3" cols="20"></textarea><br>
+        <input type="checkbox" checked> Подписаться на рассылку<br>
+        <input class="regbut" type="submit"  value="">
+     </form>
+
+    <footer>
+        <p class="footext">&copy Made by Egor Rafikov</p>
+    </footer>
+
+
+</body>
+</html>

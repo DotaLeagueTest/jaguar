@@ -1,0 +1,88 @@
+@font-face {
+    font-family: simplex;
+    src: url(fonts/simplex.ttf);
+}
+
+h1{
+    text-align: center;
+
+    font-size: 60px;
+    color:white;
+}
+body{
+    background: url(images/bg.png) no-repeat;
+    font-family: simplex;
+}
+.wrapper{
+    text-align: center;
+
+}
+form.regform{
+    text-align: center;
+    color:white;
+    font-family: simplex;
+
+
+
+}
+
+.ego{
+    border:1px solid white;
+    background: transparent;
+    color: white;
+}
+.pass{
+    border: 1px solid black;
+    background: transparent;
+    color:white;
+}
+
+.pass{
+    background: transparent;
+    border: 1px solid white;
+    color:white;
+}
+.nick{
+    background: transparent ;
+    border:1px solid white;
+    color:white;
+}
+.imya{
+    background: transparent;
+    border: 1px solid white;
+    color:white;
+}.familia{
+    border: 1px solid white;
+    background: transparent;
+    color:white;
+ }
+ .info{
+     border: 1px solid white;
+     background: transparent;
+     color:white;
+ }
+input[type="submit"] {
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    background: url("images/regbut.png");
+    border: 0;
+
+}
+.regbut{
+    margin-top: 20px;
+}
+input.regbut{
+    background: url(images/regbut.png);
+}
+input.regbut:hover{
+    background: url(images/regbut2.png);
+}
+footer{
+    background: transparent;
+    height: 10px;
+}
+.footext{
+    text-align: right;
+    color:white;
+}
